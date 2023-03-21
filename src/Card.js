@@ -1,14 +1,13 @@
 import SearchIcon from '@mui/icons-material/Search';
 import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
-import { TextField, Grid, Button, Typography} from '@mui/material';
+import {TextField, Grid, Button, Typography} from '@mui/material';
 
-const Card = () => {
+const Card = () => {  
     return (
       <Grid container direction="column" alignItems="center" justify="center">
         <TextField
           variant="outlined"
           label="location"
-          fullWidth
           style={{ marginBottom: "2em" }}
           color="secondary"
           id = "city"
@@ -32,10 +31,10 @@ const Card = () => {
         </Grid>
       </Grid>
     );
-  
+
     function handleSubmit() {
       const APIKey = "603267a347210c31ac96d13bb9596c0a"
-      const city = document.getElementById('city').value;
+      const city= document.getElementById('city').value;
       const result = document.getElementById('result') 
       const kurz = document.getElementById('result-kurz')
       const desc = document.getElementById('result-desc')
