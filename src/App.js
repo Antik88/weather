@@ -34,10 +34,9 @@ export default function App() {
       <ThemeProvider theme={theme}>
           <Grid
             position={"fixed"}
-            height={"793px"}
+            height={"100%"}
             container
             direction="column"
-            spacing={5}
             sx={{
               bgcolor: 'background.default',
               color: 'text.primary',
@@ -53,6 +52,8 @@ export default function App() {
             <Grid item>
                 <Typography 
                   variant='h5'
+                  marginTop={"20px"}
+                  marginBottom={"30px"}
                   color={theme.palette.mode === 'dark' ? "secondary" : "black"}
                   align='center'
                 >

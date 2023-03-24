@@ -19,7 +19,12 @@ const Card = () => {
           <Grid item xs={12} md={0} className="result-kurz-class" style={{textAlign: 'center'}}>
             <Typography id="result-kurz" variant="h6" style={{marginBottom: "0.5em"}}></Typography>
           </Grid>
-          <Grid container justifyContent="center" style={{textAlign: "center", alignItems: "center", alignContent: "center"}}>
+          <Grid 
+            container 
+            justifyContent="center" 
+            style={{textAlign: "center", alignItems: "center", alignContent: "center"}}
+            spacing={2}
+            >
             <Grid item>
               <DeviceThermostatIcon/>
             </Grid>
